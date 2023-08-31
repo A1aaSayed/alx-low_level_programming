@@ -1,26 +1,30 @@
 #include "main.h"
 /**
+ * check_prime - find prime numbers
+ * @x: int
+ * @y: int
+ * Return: 1
+*/
+
+int check_prime(int x, int y)
+{
+	if (y < 2 || y % x == 0)
+		return (0);
+	else if (x > y / 2)
+		return (1);
+	else
+		return (check_prime(a + 1, b));
+}
+
+/**
  * is_prime_number - find prime numbers
  * @n: int
  * Return: 1
 */
+
 int is_prime_number(int n)
 {
-	bool is_prime = true;
-
-	if (n <= 1)
-		is_prime = false;
-	else
-	{
-		for (int i = 2; i * i <= n; i++)
-		{
-			if (n % i == 0)
-				is_prime = false;
-		}
-	}
-
-	if (is_prime)
+	if (n == 2)
 		return (1);
-	else
-		return (0);
+	return (check_prime(2, n));
 }
