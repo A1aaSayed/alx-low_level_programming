@@ -1,17 +1,17 @@
 #include "main.h"
 /**
- * sqrt - check sqrt
+ * check - check sqrt
  * @n: int
  * @i: int
  * Return: sqrt or -1
 */
-int sqrt(int n, int i)
+int check(int n, int i)
 {
 	if (n * n == i)
 		return (n);
 	if (n * n > i)
 		return (-1);
-	return (sqrt(n + 1, i));
+	return (check(n + 1, i));
 }
 
 /**
@@ -24,5 +24,5 @@ int _sqrt_recursion(int n)
 {
 	if (n == 0)
 		return (0);
-	return (sqrt(1, n));
+	return (check(1, n));
 }
