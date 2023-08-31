@@ -7,6 +7,8 @@
 */
 int sqrt(int n, int i)
 {
+	i = 1;
+
 	if (i * i == n)
 		return (i);
 	if (i * i > n)
