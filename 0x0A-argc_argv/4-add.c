@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 /**
  * main - entry point
  * @argc: num of args
@@ -12,11 +11,10 @@ int main(int argc, char **argv)
 {
 	int i, j, sum = 0;
 
-	if (argc < 2)
-		printf("0\n");
-
 	for (i = 1; i < argc; i++)
 	{
+		if (argc < 2)
+			printf("0\n");
 		for ( j = 0; argv[i][j]; j++)
 		{
 			if (argv[i][j] < '0' || argv[i][j] > '9')
