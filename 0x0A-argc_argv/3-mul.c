@@ -2,15 +2,15 @@
 #include <stdlib.h>
 
 /**
- * main - Entry point
- * @argc: nums of args
+ * main - Entry point.
+ * @argc: number of arguments
  * @argv: arguments
+ *
  * Return: 0
-*/
-
+ */
 int main(int argc, char **argv)
 {
-	int num1, num2;
+	int x, y;
 
 	if (argc < 3)
 	{
@@ -18,11 +18,9 @@ int main(int argc, char **argv)
 		return (1);
 	}
 
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[2]);
+	x = atoi(argv[1]);
+	y = atoi(argv[2]);
+	printf("%d\n", x * y);
 
-	printf("%d\n", num1 * num2);
-
-	
 	return (0);
 }
