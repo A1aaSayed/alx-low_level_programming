@@ -1,10 +1,15 @@
 #include "main.h"
 #include <stdlib.h>
-/***/
+/**
+ * *str_concat - function that concatenates two strings
+ * @s1: first string
+ * @s2: second string
+ * Return: cancatenated string
+*/
 
 char *str_concat(char *s1, char *s2)
 {
-	int i, j, k, z, len1, len2;
+	int i, j, k, z, len1, len2, size;
 	char *str;
 
 	i = 0;
@@ -14,8 +19,9 @@ char *str_concat(char *s1, char *s2)
 	while (s2[j] != '\0')
 		j++;
 	len2 = j;
+	size = len1 + len2;
 
-	str = (char *) malloc(sizeof(char) * (len1 + len2 + 1));
+	str = (char *) malloc(sizeof(char) * (size + 1));
 	if (str == NULL)
 		return (NULL);
 
@@ -23,7 +29,7 @@ char *str_concat(char *s1, char *s2)
 		str[k] = s1[k];
 	for (z = 0; z < len2; z++)
 		str[k] = s2[z];
-	str[len1 + len2] = '\0';
+	str[size] = '\0';
 
 	return (str);
 }
