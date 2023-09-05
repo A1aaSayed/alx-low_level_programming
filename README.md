@@ -1,4 +1,4 @@
 ALX low level programming
 shell navigation
-Git, Emacs, vi
+Git, Emacs, vi,
 C Programming
