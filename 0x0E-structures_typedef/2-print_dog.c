@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "dog.h"
 /**
  * print_dog - func that prints the dog details
