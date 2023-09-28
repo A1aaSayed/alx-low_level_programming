@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * is_palindrome - function returns 1 if s is palind, 0 if s is not palind
@@ -7,10 +8,8 @@
 */
 int is_palindrome(char *s)
 {
-	int len;
+	int len = strlen(s);
 
-	for (len = 0; s[len] != '\0'; len++)
-		;
 	if (len <= 1)
 		return (1);
 	if (s[0] != s[len - 1])
