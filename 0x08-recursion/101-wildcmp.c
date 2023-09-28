@@ -2,12 +2,12 @@
 
 /**
  * check - check if two strings are the same
- * @s1: string_1.
+ * @s1: string_1
  * @s2: string_2
- * @i: left index.
- * @j: index 
+ * @i: left index
+ * @j: index
  * Return: 1 or 0
- */
+*/
 int check(char *s1, char *s2, int i, int j)
 {
 	if (s1[i] == '\0' && s2[j] == '\0')
@@ -23,8 +23,7 @@ int check(char *s1, char *s2, int i, int j)
 /**
  * wildcmp - compare two strings
  * @s1: first string
- * @s2: second string.
- *
+ * @s2: second string
  * Return: 1 if the two strings are the same
  */
 int wildcmp(char *s1, char *s2)
