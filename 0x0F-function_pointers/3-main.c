@@ -1,6 +1,7 @@
 #include "calc.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * main - entry point
@@ -32,6 +33,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(100);
 	}
-	printf("%i\n", p(num1, num2));
+	printf("%d\n", p(num1, num2));
 	return (0);
 }
