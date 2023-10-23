@@ -3,25 +3,25 @@
 #include <stddef.h>
 
 /**
- * print_list - function that prints all the elements of a list
- * @h: list
- * Return: number of nodes
-*/
-
+ * print_list - print linked list
+ * @h: head of list
+ * Return: len of list
+ */
 size_t print_list(const list_t *h)
 {
-	const struct list_s *ptr;
-	size_t size = 0;
+	const struct list_s *p;
+	size_t counter = 0;
 
-	ptr = h;
-	while (ptr != NULL)
+	p = h;
+	while (p != NULL)
 	{
-		if (ptr->str == NULL)
+		if (p->str == NULL)
 			printf("[0] (nil)\n");
 		else
-			printf("[%d] %s\n", ptr->len, ptr->str);
-		size++;
-		ptr = ptr->next;
+			printf("[%d] %s\n", p->len, p->str);
+
+		counter++;
+		p = p->next;
 	}
-	return (size);
+	return (counter);
 }
