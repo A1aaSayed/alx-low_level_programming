@@ -9,19 +9,19 @@
  */
 size_t print_list(const list_t *h)
 {
-	const struct list_s *p;
-	size_t counter = 0;
+	const struct list_s *ptr;
+	size_t count = 0;
 
-	p = h;
-	while (p != NULL)
+	ptr = h;
+	while (ptr != NULL)
 	{
-		if (p->str == NULL)
+		if (ptr->str == NULL)
 			printf("[0] (nil)\n");
 		else
-			printf("[%d] %s\n", p->len, p->str);
+			printf("[%d] %s\n", ptr->len, ptr->str);
 
-		counter++;
-		p = p->next;
+		count++;
+		ptr = ptr->next;
 	}
-	return (counter);
+	return (count);
 }
