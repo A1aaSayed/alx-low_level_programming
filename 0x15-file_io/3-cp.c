@@ -1,6 +1,6 @@
 #include "main.h"
-#define BUFSIZE 1024
 
+#define BUFSIZE 1024
 int _close(int fd);
 
 /**
@@ -9,7 +9,6 @@ int _close(int fd);
  * @argv: array of input strings
  * Return: 0
  */
-
 int main(int argc, char *argv[])
 {
 	int fd_from, fd_to;
