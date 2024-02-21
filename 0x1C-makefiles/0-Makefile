@@ -1,0 +1,8 @@
+school: main.o
+    gcc main.o -o school
+
+main.o: main.c
+    gcc -c main.c
+
+.PHONY: all
+all: school
